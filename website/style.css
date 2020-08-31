@@ -1,0 +1,157 @@
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+	"headline headline entry"
+	"zip zip entry"
+	"feel feel entry";
+    background: #f23557;
+    font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	justify-items: center;
+	color: #ffffff;
+}
+
+.holder{
+
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.entry{
+	grid-area: entry;
+	background: rgba(59, 74, 107, .4);
+	justify-self: stretch;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#entryHolder{
+	color: #f0d43a;
+	letter-spacing: 2px;
+}
+
+#date{
+
+}
+
+#temp{
+
+}
+
+#content{
+
+}
+
+.headline {
+	grid-area: headline;
+	font-size: 3em;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 1px #fff;
+	color: #f0d43a;
+}
+
+.title{
+	font-size: 1.5em;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.zip {
+	grid-area: zip;
+}
+
+.feel {
+	grid-area: feel;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+	font-size: 27px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 3px #000;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#000000;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+	border: 1px outset #f0d43a;
+	padding: 0 5px;
+	letter-spacing: 2px;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    background: #302f2f;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: 'Helvetica', sans-serif;
+    border: none;
+	display: block;
+	cursor: pointer;
+	margin: 5px 0;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 10px #fff;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#000;
+    color: #f0d43a;
+    font-size: 20px;
+	font-family: 'Helvetica', sans-serif;
+	display: block;
+	border: 1px outset #f0d43a;
+	letter-spacing: 2px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    box-shadow: 1px 1px 10px #ffffff;
+}
+button:active, button:hover {
+	color: #f0d43a;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #fff2a7;
+	font-family: 'Helvetica', sans-serif;
+	letter-spacing: 2px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff2a7;
+	font-family: 'Helvetica', sans-serif;
+	letter-spacing: 2px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff2a7;
+	font-family: 'Helvetica', sans-serif;
+	letter-spacing: 2px;
+}
